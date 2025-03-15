@@ -1,0 +1,26 @@
+{
+  "name": "devlopertinder",
+  "version": "1.0.0",
+  "description": "color red #this is my file code contribution",
+  "main": "superman.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiwari6410/devloperTinder.git"
+  },
+  "keywords": [
+    "namastenode",
+    "devtinder"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tiwari6410/devloperTinder/issues"
+  },
+  "homepage": "https://github.com/Tiwari6410/devloperTinder#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

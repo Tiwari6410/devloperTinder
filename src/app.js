@@ -14,6 +14,9 @@ app.use("/test", (req, res) => {
 app.use("/hello", (req, res) => {
     res.send("Hy I am from Test Hello Environment")
 })
+app.use("/Login", (req, res) => {
+    res.send("Hy I am from Login Environment")
+})
 
 app.listen(7777, () => {
     console.log("server is running successfully ")

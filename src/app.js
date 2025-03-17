@@ -4,19 +4,29 @@ const express = require("express")
 
 const app = express();
 
-app.get("/", (req, res) => {
-    res.send("Hy Men I am from dashboard")
+
+// app.get(/.*fly$/, (req, res) => {
+//     res.send({ firstname: "arvind", lastname: "tiwari" })
+// })
+// app.get(/a/, (req, res) => {
+//     res.send({ firstname: "arvind", lastname: "tiwari" })
+// })
+app.get("/user/:userId/:password", (req, res) => {
+    console.log(req.params)
+    res.send({ firstname: "arvind", lastname: "tiwari" })
+})
+app.post("/user", async (req, res) => {
+    console.log(req.body)
+    res.send("data Successfully saved to the database")
+})
+app.delete("/user", (req, res) => {
+    res.send("Successfully put api has called")
 })
 
 app.use("/test", (req, res) => {
-    res.send("Hy I am from Test routes")
+    res.send("hello grom the server")
 })
-app.use("/hello", (req, res) => {
-    res.send("Hy I am from Test Hello Environment")
-})
-app.use("/Login", (req, res) => {
-    res.send("Hy I am from Login Environment")
-})
+
 
 app.listen(7777, () => {
     console.log("server is running successfully ")

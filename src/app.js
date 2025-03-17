@@ -4,6 +4,9 @@ const express = require("express")
 
 const app = express();
 
+
+app.use("/user", rH1, rH2, [rH3, rH4], rH5, rh6)
+
 app.get("/user", (req, res, next) => {
     console.log("i am first controller console")
     res.send({ firstName: "Arvind", second: "Tiwari" })
